@@ -1,13 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Header from './Components/Header';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-       <h1>Libby!</h1>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        {/* Add your routes here */}
+      </div>
+    </Router>
   );
 }
 
